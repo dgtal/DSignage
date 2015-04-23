@@ -1,4 +1,3 @@
-
 ######################################################################################
 #__author__     = "Gaurav Sharma"                                                    #
 #__copyright__  = "Copyright 2014, School of Public Health, University of Maryland"  #
@@ -9,6 +8,7 @@
 #__Purpose__    = "Calls Gthumb Image Viewer"  										 #
 #__Platform__	= "Bash"                                                             #
 #__File.Name__  = "loop.sh"                                                          #
+#__Updated__    = "23 April 2015"                                                    #
 ######################################################################################
 
 #!/bin/bash

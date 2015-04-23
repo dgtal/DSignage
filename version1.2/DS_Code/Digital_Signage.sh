@@ -1,4 +1,3 @@
-
 ######################################################################################
 #__author__     = "Gaurav Sharma"                                                    #
 #__copyright__  = "Copyright 2014, School of Public Health, University of Maryland"  #
@@ -9,6 +8,7 @@
 #__Purpose__    = "Copies files from local folder into slidesshow.jpg at intervals"  #
 #__Platform__	= "Python"                                                           #
 #__File.Name__  = "loop.sh"                                                          #
+#__Updated__    = "23 April 2015"                                                    #
 ######################################################################################
 
 #!/bin/bash

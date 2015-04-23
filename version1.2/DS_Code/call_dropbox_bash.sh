@@ -1,4 +1,3 @@
- 
 ######################################################################################
 #__author__     = "Gaurav Sharma”                                                    #
 #__copyright__  = "Copyright 2014, School of Public Health, University of Maryland   #			     
@@ -9,6 +8,7 @@
 #__Purpose__    = “Downloads files from the Dropbox folder onto Desktop”             #	
 #__Platform__	= “Bash”                                                             #
 #__File.Name__  = “call_dropbox_bash.sh”                                             #	
+#__Updated__    = "23 April 2015"                                                    #
 ######################################################################################
 
 #!/bin/bash

@@ -1,4 +1,3 @@
-
 ######################################################################################
 #__author__     = "Gaurav Sharma"                                                    #
 #__copyright__  = "Copyright 2014, School of Public Health, University of Maryland"  #
@@ -9,6 +8,7 @@
 #__Purpose__    = "To remove old files from dropbox based on a pattern"              #
 #__Platform__	= "Python"                                                           #
 #__File.Name__  = "File_Remover.py"                                                  #
+#__Updated__    = "23 April 2015"                                                    #
 ######################################################################################
 
 
