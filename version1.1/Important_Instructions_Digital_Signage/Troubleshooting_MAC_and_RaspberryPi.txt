@@ -1,0 +1,115 @@
+######################################################################################
+#__author__     = "Gaurav Sharma”                                                    #
+#__copyright__  = "Copyright 2014, School of Public Health, University of Maryland   #
+#__department__ = "Telecommunications”                                               #
+#__credits__    = "Gaurav Sharma”                                                    #
+#__email__      = "gaurav10@umd.edu", "sgauravsharma059@gmail.com"                   #
+#__status__     = "Implemented"                                                      #
+#__Purpose__    = “Instructions to put together all the Scripts”                     #
+#__Platform__	= “Machintosh”                                                       #
+#__File.Name__  = “README.txt”                                                       #
+#__Updated___   = "6th April 2015"                                                   #
+######################################################################################
+
+
+
+#############################################################################################
+#                                  Raspberry_pi	                                            #
+#############################################################################################
+                                                                                            #
+1) Which all TVs are Pi enabled ?                                                           #
+LG TV outside the Dean’s suite, SHARP TC in the student Lounge, Samsung TV above the WEPA   #
+printer, SHARP TV on the bridge and LG TV outside the lecture hall .                        #
+                                                                                            #
+2) What folder on Dropbox will be the parent folder now?                                    #
+The Dev folder will be the new parent folder for all the TVs. Concourse_TV folder can be    #
+deleted. I have already pasted the content of Concourse_TV to Dev folder.                   #
+                                                                                            #
+3) I uploaded the file in the dropbox, but it doesn’t turn up on the TV?                    #
+Probably, you uploaded a file format that is not .jpg or .JPG. In case, if you see          #
+your file extension to be .jpeg, then just rename it to .JPG or .jpg. You may also see      #
+faq 4) in case the issue persists.                                                          #
+                                                                                            #
+4) Pi Screen is frozen and it is struck at one image?                                       #
+* Do a hard reset of Pi. That is, plug out the power cord and re-insert it                  #
+* Pi will reboot into the signage mode after between 1-5 minutes                            #
+* You’ll be all set now.                                                                    #
+                                                                                            #
+5) I uploaded the images to Dev, but old ones are still running?                            #
+* Press Esc key and Pull up the browser from the top Menu Tab->Internet Explorer            #
+* Try to open google.com. In case if you cannot reach google, it means, internet access is  #
+not available.                                                                              #
+* Plug out the Wifi module and again reinsert. Hopefully, it will catch the signal.         #
+* If the above doesn’t work, please do a hard reset of the Pi by plugging out the power     #
+  cord.                                                                                     #
+* Pi will reboot into the signage mode and will take between 0-5 minute to start            #
+* You’ll be all set now.                                                                    #
+                                                                                            #
+6) What about scheduling content ?                                                          #
+The SHARP TV in the student lounge is setup with a cron job which will remove all the files #
+named according to the naming convention that I have placed under                           #
+Important_Instructions_Digital_Signage folder. Current removal time is every day at 00:15   #
+am. It is important to note that if the MacMini in student lounge is down, it won't delete  #
+the files from Dropbox.                                                                     #
+                                                                                            #
+7) Correct Picture modes for different makes of TVs?                                        #
+It came to my notice that on LG TVs—> Just to scan picture mode works and on Samsung TVs—>  #
+Picture mode works. All the other modes will result in either over scanned image with black #
+borders or stretched images going beyond the screen. I have already set up all the TVs to   #
+this new settings. On rest all TVs it seems to work fine for now.                           #
+                                                                                            #
+8) Can we rename the existing files in the Dev folder as per the naming convention to       #
+automatically schedule content?                                                             #
+Renaming isn’t allowed in this system. So, if you want to leverage the automatic deletion   #
+feature then kindly delete the current files and again upload the same with the desired end #
+date after a minute or so after deletion time.                                              #
+                                                                                            #
+9) What happens if by mistake someone renamed the file? Will it break the system ?          #
+Mostly, the renamed file will not be updated on to the Pis. The same file with the previous #
+name will keep on going. The next time someone deletes an image from the Dev folder or      #
+automatic scripts does that, the new name of the files will appear on the Pis.              #
+                                                                                            #
+10) Can we delete all the files under the Dev folder and add new ones?                      #
+For keeping the system simple, all the files will be deleted automatically. In case if the  #
+user of the account wants to force delete and add new files, then the user needs to make    #
+sure that the Dev folder always have one file at least in the folder. For e.g., there are   #
+10 files, and user wants to remove all and add two new ones. In this case, the user will    #
+first add two new and then delete all, or user deletes nine and then add two and then       #
+delete the 10th one. Deleteing all files at once will have unknown effects on the system    #
+                                                                                            #
+#############################################################################################
+#                                 MAC/MACMINI/MACBOOKPRO                                    #
+#############################################################################################
+                                                                                            #
+1) Why do I see pop-up on the screen and signage files running behind it?                   #
+Pop up can be caused by an application. For example, some one just used a TeamViewer on     #
+the mac and on exit TeamViewer left a pop up. It can also be that the bluetooth is on       #
+and a pop up searching for wireless mouse or keyboard comes up not the screen.              #
+You can get rid of pop-ups by going under System Preferences, Notification, and             #
+selecting Do Not Disturb. you can put the work time in there fro 8 AM to 8 PM, so that      #
+during the operation hours in SPH there is no pop-ups on the screen.                        #
+Having said that if someone do see an update notification, please feel free to update,      #
+and then restart.                                                                           #
+                                                                                            #
+2) I uploaded the images, but old ones are still running?                                   #
+Wifi isn’t connected. Turn off and on the Wifi switch on Mac                                #
+                                                                                            #
+3) Video or image file uploaded isn’t turning up?                                           #
+MAC version of Digital_Signage will only play .jpg, .JPG and .mp4 files. If you have        #
+uploaded any other format, it might or might not work.                                      #
+                                                                                            #
+4) Can I change the name of files and folder in dropbox after adding them?                  #
+No, you cannot. You have to delete the file whose name is supposed to be changed and        #
+upload again. This is because, the running application keeps count of number of files       #
+not names of files.                                                                         #
+                                                                                            #
+5) Why is the synced folder name Dev?                                                       #
+The project was in development phase, and since the decision was sudden to put into         #
+production, the folders name couldn’t be changed. It is possible to change the names,       #
+if a necessity arises.                                                                      #
+                                                                                            #
+6) Automatic deletion of files isn’t working properly?                                      #
+You haven’t followed the correct naming convention.                                         #
+Please refer Instruction for naming files.docx file in Dropbox account                      #
+                                                                                            #
+#############################################################################################

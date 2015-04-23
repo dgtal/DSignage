@@ -1,0 +1,96 @@
+######################################################################################
+#__author__     = "Gaurav Sharma”                                                    #
+#__copyright__  = "Copyright 2014, School of Public Health, University of Maryland   #			     
+#__department__ = "Telecommunications”                                               #
+#__credits__    = "Gaurav Sharma”                                                    #
+#__email__      = "gaurav10@umd.edu", "sgauravsharma059@gmail.com"                   #
+#__status__     = "Implemented"                                                      #
+#__Purpose__    = “Instructions to put together all the Scripts”                     #	
+#__Platform__	= “Machintosh”                                                       #
+#__File.Name__  = “README.txt”                                           	     #	
+######################################################################################
+
+
+
+#############################################################################################
+#                                  Raspberry_pi					            #
+#############################################################################################
+											    #
+1) I uploaded the file in the dropbox, but it doesn’t turn up on TV?                        #
+Ans. Probably, you had uploaded a file format that is not .jpg or .JPG. In case, if you     #
+     see your file extension to be .jpeg, then just rename it to .JPG or .jpg 		    #
+											    #
+											    #
+2) Pi Screen is frozen and it is struck at one image? 					    #
+Ans. * Do a hard reset of Pi. That is, plug out the power cord and re-insert it. 	    #
+     * Pi will restart after that, and you need to click on LXTerminal icon on the desktop. #
+     * A black window will open,							    #
+	1) Type cd Desktop and then press enter once					    #
+	2) Type bash Digtial_Signage.sh and press enter. 				    #
+											    #
+    * You’ll be all set now. 								    #
+											    #
+3) I uploaded the images, but old ones are still running?				    #
+											    #
+Ans. * Please take a look at the Pi, if the wireless module doesn’t have blue light on,     #
+       that means the Wifi is not working. 						    #
+     * Plug out the Wifi module and again reinsert. Hopefully, it will catch the signal.    #
+     * If the above doesn’t work, please do a hard reset of the Pi by plugging out the power# 
+       cord.										    #
+     * On startup screen, press the WifiConfig icon, and scan for wireless network.         #
+     * On finding the umd-secure (SSID) press it and enter the sph-sc credential to access  #
+       wifi. 										    #
+     * Open LXTerminal from the Desktop, and type ping www.google.com. If you see a reply   #
+       message form google.com, you are setup. If not, then try the above steps again.      #
+     * After confirming that you are on Wifi, please repeat the Step (2)(as above) from     #
+       third step which talks about black window.					    #
+     * You’ll be all set now.								    #
+											    #
+4) I deleted all the files from Raspberry_Pi_1 folder and uploaded new set of slides, but   #
+   system doesn’t show any rotating images?						    #
+											    #
+Ans. While deleting, you are not allowed to delete all files from Raspberry_Pi_1 folder.    #
+     You should keep at least one file, before uploading any new files. After two minutes,  #
+     you should delete that last one remaining. This is to make sure that Pi detects that   #
+     you are making changes to the system. The window is 30 seconds on Pi. If you are making# 
+     even exchanges, that is deleting 1 image for the another, you better wait a minute,    # 
+     just to be sure.									    #
+											    #		 
+#############################################################################################
+#                                 MAC/MACMINI/MACBOOKPRO	              	            #
+#############################################################################################
+											    #
+1) Why do I see pop-up on the screen and signage files running behind it?	            #
+Ans. Pop up can be caused by an application. For example, some one just used a TeamViewer on#
+     the mac and on exit TeamViewer left a pop up. It can also be that the bluetooth is on  #
+     and a pop up searching for wireless mouse or keyboard comes up not the screen.         #
+     You can get rid of pop-ups by going under System Preferences, Notification, and        #
+     selecting Do Not Disturb. you can put the work time in there fro 8 AM to 8 PM, so that #
+     during the operation hours in SPH there is no pop-ups on the screen.	            #
+     Having said that if someone do see an update notification, please feel free to update, #
+     and then restart.									    #	
+											    #
+2) I uploaded the images, but old ones are still running?				    #	
+Ans. Wifi isn’t connected. Turn off and on the Wifi switch on Mac			    #
+										            #				
+3) Video or image file uploaded isn’t turning up?                                           #
+Ans. MAC version of Digital_Signage will only play .jpg, .JPG and .mp4 files. If you have   #
+     uploaded any other format, it might or might not work.                                 #
+ 											    #	
+4) Can I change the name of files and folder in dropbox after adding them?                  #
+Ans. No, you cannot. You have to delete the file whose name is supposed to be changed and   #
+     upload again. This is because, the running application keeps count of number of files  #
+     not names of files. 								    #
+											    #	
+5) Why is the synced folder name Concourse_TV and Raspberry_Pi_1?                           #
+Ans. The project was in development phase, and since the decision was sudden to put into    #
+     production, the folders name couldn’t be changed. It is possible to change the names,  #
+     if a necessity arises. 								    #
+											    #	
+6) Automatic deletion of files isn’t working properly?					    #	
+Ans. You haven’t followed the correct naming convention. 			            #
+     Please refer Instruction for naming files.docx file in Dropbox account 		    #
+											    #	
+############################################################################################# 
+
+	
