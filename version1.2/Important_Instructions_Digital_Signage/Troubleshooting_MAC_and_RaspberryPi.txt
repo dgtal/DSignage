@@ -79,7 +79,6 @@ delete the 10th one. Deleteing all files at once will have unknown effects on th
                                                                                             #
 11) I deleted all the files from Raspberry_Pi_1 folder and uploaded new set of slides, but  #
    system doesn’t show any rotating images?                                                 #
-                                                                                            #
 While deleting, you are not allowed to delete all files from Raspberry_Pi_1 folder.         #
 You should keep at least one file, before uploading any new files. After two minutes,       #
 you should delete that last one remaining. This is to make sure that Pi detects that        #
