@@ -81,7 +81,7 @@ after sometime in Digital Signage Mode.                                         
 Remove button. (In case if umd-secure isn’t listed, then move to the next step)<<- Highly   #
 Unlikely case                                                                               #
 ->See through all the tabs to locate Scan button.                                           #
-->Once you click on scan it will list mud-secure. You may see many umd-secure network. You 	#
+->Once you click on scan it will list mud-secure. You may see many umd-secure network. You  #
 can go with the one which has least negative number in Db (Decibel)                         #
 -> Wifi Setting paramter ---> EAP Method = TTLS, Encryption = CCMP                          #
 ->Type “sudo reboot” and press enter. This will restart the system and Pi will again start  #
