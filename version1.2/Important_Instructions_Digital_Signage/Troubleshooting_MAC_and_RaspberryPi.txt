@@ -56,7 +56,7 @@ the files from Dropbox.                                                         
 It came to my notice that on LG TVs—> Just to scan picture mode works and on Samsung TVs—>  #
 Picture mode works. All the other modes will result in either over scanned image with black #
 borders or stretched images going beyond the screen. I have already set up all the TVs to   #
-this new settings.                          #
+this new settings.                                                                          #
                                                                                             #
 8) Can we rename the existing files in the Dev folder as per the naming convention to       #
 automatically schedule content?                                                             #
