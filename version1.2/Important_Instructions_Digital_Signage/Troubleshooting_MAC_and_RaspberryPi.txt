@@ -8,7 +8,7 @@
 #__Purpose__    = “Instructions to put together all the Scripts”                     #
 #__Platform__	= “Machintosh”                                                       #
 #__File.Name__  = “README.txt”                                                       #
-#__Updated___   = "6th April 2015"                                                   #
+#__Updated___   = "23rdApril 2015"                                                   #
 ######################################################################################
 
 
@@ -56,7 +56,7 @@ the files from Dropbox.                                                         
 It came to my notice that on LG TVs—> Just to scan picture mode works and on Samsung TVs—>  #
 Picture mode works. All the other modes will result in either over scanned image with black #
 borders or stretched images going beyond the screen. I have already set up all the TVs to   #
-this new settings. On rest all TVs it seems to work fine for now.                           #
+this new settings.                          #
                                                                                             #
 8) Can we rename the existing files in the Dev folder as per the naming convention to       #
 automatically schedule content?                                                             #
@@ -76,6 +76,16 @@ sure that the Dev folder always have one file at least in the folder. For e.g., 
 10 files, and user wants to remove all and add two new ones. In this case, the user will    #
 first add two new and then delete all, or user deletes nine and then add two and then       #
 delete the 10th one. Deleteing all files at once will have unknown effects on the system    #
+                                                                                            #
+11) I deleted all the files from Raspberry_Pi_1 folder and uploaded new set of slides, but  #
+   system doesn’t show any rotating images?                                                 #
+                                                                                            #
+Ans. While deleting, you are not allowed to delete all files from Raspberry_Pi_1 folder.    #
+     You should keep at least one file, before uploading any new files. After two minutes,  #
+     you should delete that last one remaining. This is to make sure that Pi detects that   #
+     you are making changes to the system. The window is 30 seconds on Pi. If you are making#
+     even exchanges, that is deleting 1 image for the another, you better wait a minute,    #
+     just to be sure.                                                                       #
                                                                                             #
 #############################################################################################
 #                                 MAC/MACMINI/MACBOOKPRO                                    #
