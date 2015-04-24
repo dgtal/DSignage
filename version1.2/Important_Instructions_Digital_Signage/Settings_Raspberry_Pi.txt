@@ -1,0 +1,92 @@
+######################################################################################
+#__author__     = "Gaurav Sharma”                                                    #
+#__copyright__  = "Copyright 2014, School of Public Health, University of Maryland   #
+#__department__ = "Telecommunications”                                               #
+#__credits__    = "Gaurav Sharma”                                                    #
+#__email__      = "gaurav10@umd.edu", "sgauravsharma059@gmail.com"                   #
+#__status__     = "Implemented"                                                      #
+#__Purpose__    = “Instructions to put together all the Scripts”                     #
+#__Platform__	= “Machintosh”                                                       #
+#__File.Name__  = “Settings_Raspberry_Pi.txt”                                        #
+#__Updated___   = "24th April 2015"                                                  #
+######################################################################################
+
+
+
+
+#############################################################################################
+#                                  Raspberry_pi	                                            #
+#############################################################################################
+1) Most important: Every Pi has a number written on top of it. Please compile a list of all #
+the Pi numbers and the associated TVs they are attached to. Kindly, share this file on      #
+Dropbox under folder Important_Instructions_Digital_Signage folder in txt format named as   #
+Pi_location.txt. (You might have to take down some of the PIs in order to the see           #
+respective number)																			#
+ 																							#
+Note 1: On LXTerminal, please type only the things that I have written inside the double    #
+quotes (“ “). Double quotes are not to be typed anywhere.									#
+            																				#
+Note 2: For completing all the below steps, all Raspberry Pis need not be taken down.       #
+Please attach a keyboard and mouse to the Pi, and use TVs screen to see the Desktop view.   #
+Also, for the Raspberry Pi on the TV on the bridge, you will have to take it down and       #
+attach to a HDMI monitor to it to carry out the below listed steps. While taking down the   #
+PI make sure you keeps the HDMI cord and Power Cord for Pi behind the TV within your reach  #
+from the Bridge. In case if you don’t, then be prepared to use the ladder that Mark has     #
+underneath the lecture hall.																#
+																							#
+ Initially the Pi will be showing Images. 													#
+ 																							#
+->Press Esc key on keyboard. This will minimize the Image viewer window size				#
+->Open LXTerminal form the start menu on the top left. (LXTerminal will probably be under   #
+the others tab. If you don’t find it there, then try under other tabs. Some Pis have an 	#
+icon on Desktop itself)																		#
+->Type “cd ~/Desktop/DS_Code” and press enter.												#
+->Type “bash teardown.sh” and press enter. This will close the Digital Signage running in   #
+the background																				#
+->Type “clear” and press enter. Now move on to the other steps								#
+																							#
+2) Setting the Root Password on every Pi.  (This is one time setup and is needed for me to  #
+diagnose system in case if anyone messes up below steps)									#
+																							#
+->Open LXTerminal form the start menu on the top left. (It will probably under the others   #
+tab. If you don’t find it there, then try under other tabs. Some Pis have an icon on        #
+Desktop itself)																				#
+																							#
+->Type, “sudo passwd root”  																#
+->Type the root password. ( I would suggest keeping password as “raspberrypi_1",            #
+“raspberrypi_2”, and so on where no after the underscore is the Pi number)  				#
+->You must enter it twice and press enter. (While typing the password, you won’t see the    #
+password in clear text rather you will see *******)											#
+																							#
+3) Disabling the usb power sleeping mode? 													#
+->Open LXTerminal form the start menu on the top left. (It will probably under the others   #
+tab). (If it is already open, then go to the next step)										#
+->Create and edit a new file in /etc/modprobe.d/8192cu.conf. You can do this by typing 		#
+“sudo nano /etc/modprobe.d/8192cu.conf” in the LX Terminal									#
+->After this a embedded window will open. Please type the following 						#
+"options 8192cu rtw_power_mgnt=0 rtw_enusbss=1 rtw_ips_mode=1” without the quotes			#
+->Once the line is added, press ctrl + X . It will ask you to do you want to save file, 	#
+press Y.																					#
+->You have successfully created the file now. Cross check it the file is there by typing 	#
+“cat  /etc/modprobe.d/8192cu.conf”. Look for the added content, if you can see the content, #
+you are all set for this step. 																#
+->Type “sudo reboot” and press enter. This will restart the system and Pi will again start 	#
+after sometime in Digital Signage Mode.														#
+																						    #
+4) Change the Wifi Password?																#
+->Go to start option on the top left.														#
+->Under the internet tab, locate wpa_gui or WiFi Config option and click on it. 			#
+->Go to Manage Networks																		#
+->Locate umd-secure. If you see one, then delete it using the - option at the bottom or 	#
+Remove button. (In case if umd-secure isn’t listed, then move to the next step)<<- Highly 	#
+Unlikely case																				#
+->See through all the tabs to locate Scan button. 											#
+->Once you click on scan it will list mud-secure. You may see many umd-secure network. You 	#
+can go with the one which has least negative number in Db (Decibel) 						#
+-> Wifi Setting paramter ---> EAP Method = TTLS, Encryption = CCMP							#
+->Type “sudo reboot” and press enter. This will restart the system and Pi will again start  #
+after sometime in Digital Signage Mode.														#
+																							#
+                                                  											#
+#############################################################################################
+
