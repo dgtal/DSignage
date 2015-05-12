@@ -32,17 +32,12 @@ for path, subdirs, files in os.walk('/Users/administrator/Dropbox/Concourse_TV/'
         if a[len(a)-4:].lower() == ".mp4" or a[len(a)-4:].lower() == ".jpg":
              print filename
              date_file= a.replace(' ','a').replace('.','*').replace('_','*').split('*')
-             print date_file
-             print len(date_file)
              if len(date_file)>2:
-                 print date_file
                  date_file=date_file[1]
                  if int(date_file[0:2]) < int(year):
                     os.remove("/Users/administrator/Dropbox/Concourse_TV/"+filename)
                  else:
-                     if int(date_file[2:4]) < int(month):
-                         os.remove("/Users/administrator/Dropbox/Concourse_TV/"+filename)
-                     else:
+                     if int(date_file[2:4]) <= int(month):
                          if int(date_file[4:]) < int(day):
                              os.remove("/Users/administrator/Dropbox/Concourse_TV/"+filename)
 
